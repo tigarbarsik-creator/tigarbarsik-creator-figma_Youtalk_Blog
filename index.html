@@ -1,100 +1,128 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtalk — Блог</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtalk — Блог</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-  <div class="header-container">
-    <a class="youtalk" href="https://youtalk.ru/" target="_blank">
-      <img  src="img/icon/youtolk.svg"  alt="YouTalk — онлайн-сервис психологической помощи"> 
-    </a>
+  <header class="header">
+    <div class="header-container">
+      <a class="youtalk" href="https://youtalk.ru/" target="_blank">
+        <img src="img/icon/youtolk.svg" alt="YouTalk — онлайн-сервис психологической помощи">
+      </a>
 
-    <!-- Скрытый чекбокс—меню -->
-    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <!-- Скрытый чекбокс—меню -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-    <!-- Кнопка‑бургер -->
-    <label  for="menu-toggle" class="burger-btn" aria-label="Открыть меню">
-      <img class="hamburger" src="img/icon/hamburger.svg" alt="Открыть меню">
-    </label>
 
-    <!-- Навигационное меню -->
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#">О нас</a></li>
-        <li><a href="#">Тарифы</a></li>
-        <li><a href="#">Для бизнеса</a></li>
-        <li><a href="#">Психологам</a></li>
-        <li><a href="#">Сертификаты</a></li>
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">FAQ</a></li>
-        <li class="cta-item">
-          <a href="#" class="btn-pick">Подобрать психолога</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+      <!-- Кнопка‑бургер -->
+      <label for="menu-toggle" class="burger-btn" aria-label="Открыть меню">
+        <img class="hamburger" src="img/icon/hamburger.svg" alt="Открыть меню">
+      </label>
 
-    
-  <nav class="breadcrumbs"> <!-- Главная блог -->
-  <a href="/" class="breadcrumbs__link">Главная</a>
-  <span class="breadcrumbs__separator">›</span>
-  <span class="breadcrumbs__item">Блог</span>
-</nav>
+      <!-- Навигационное меню -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Для бизнеса</a></li>
+          <li><a href="#">Психологам</a></li>
+          <li><a href="#">Сертификаты</a></li>
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li class="cta-item">
+            <a href="#" class="btn-pick">Подобрать психолога</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<h1>Блог</h1>
-<main class="main">
-<div class="scroll-container">
-  <div class="tag">
-    <img src="img/icon/Type=Smiling Face.svg" alt="Улыбающееся лицо">
-    <span>Все</span>
-  </div>
-  <div class="tag">
-    <span>Самооценка и самопринятие</span>
-  </div>
-  <div class="tag">
-    <img src="img/icon/Image.svg" alt="Изображение">
-    <span>Self</span>
-  </div>
-  <div class="tag"><span>Чувства и эмоции</span></div>
-  <div class="tag"><span>Тревога</span></div>
-  <div class="tag"><span>Упражнения</span></div>
-  <div class="tag"><span>Психология питания</span></div>
-  <div class="tag"><span>Насилие</span></div>
-  <div class="tag"><span>Личное здоровье</span></div>
+  <nav class="breadcrumbs">
+    <a href="/" class="breadcrumbs__link">Главная</a>
+    <span class="breadcrumbs__separator">›</span>
+    <span class="breadcrumbs__item">Блог</span>
+  </nav>
+
+  <main class="main">
+    <h1 class="main-title">Блог</h1>
+
+    <div class="scroll-container">
+      <div class="tag">
+        <img src="img/icon/Type=Smiling Face.svg" alt="Улыбающееся лицо">
+        <span>Все</span>
+      </div>
+      <div class="tag"><span>Самооценка и самопринятие</span></div>
+      <div class="tag">
+        <img src="img/icon/Image.svg" alt="Изображение">
+        <span>Self</span>
+      </div>
+      <div class="tag"><span>Чувства и эмоции</span></div>
+      <div class="tag"><span>Тревога</span></div>
+      <div class="tag"><span>Упражнения</span></div>
+      <div class="tag"><span>Психология питания</span></div>
+      <div class="tag"><span>Насилие</span></div>
+      <div class="tag"><span>Личное здоровье</span></div>
+    </div>
+
+    <div class="blog-grid">
+      <!-- Карточка 1 -->
+      <article class="blog-card">
+        <div class="blog-card__image">
+          <img src="img/png/1.png" alt="Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики">
+          <div class="blog-card__tags">
+  <span class="blog-tag">
+    <img class="blog-tag__icon" src="img/icon/Image.svg" alt="">
+    <span class="blog-tag__text">Самооценка и самопринятие</span>
+  </span>
+  <span class="blog-tag">
+    <img class="blog-tag__icon" src="img/icon/Image.svg" alt="">
+    <span class="blog-tag__text">Self</span>
+  </span>
 </div>
 
+        </div>
+        <div class="blog-card__content">
+          <h2 class="blog-card__title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+          <div class="blog-card__author">
+            <span class="blog-author__name">Автор: Лиза Файнтух</span>
+          </div>
+          <p class="blog-card__excerpt">Изначально термин «эмоциональное…» профессиональной сфере и относился…</p>
+        </div>
+        <div class="blog-date">
+        <time class="blog-date__value" datetime="2021-08-21">21.08.2021</time>
+      </div>
+      </article>
+      
+
+      <!-- Карточка 2 -->
+      <article class="blog-card">
+        <div class="blog-card__image">
+          <img src="img/png/2.png" alt="Как не утонуть в тревоге и управлять своими страхами">
+          <div class="blog-card__tags">
+            <span class="blog-tag"><img class="blog-tag__icon" src="img/icon/Image.svg" alt="">Self</span>
+          </div>
+        </div>
+        <div class="blog-card__content">
+          <h2 class="blog-card__title">Как не утонуть в тревоге и управлять своими страхами</h2>
+          <div class="blog-card__author">
+            <span class="blog-author__name">Автор: Екатерина Бельтюкова</span>
+          </div>
+          <p class="blog-card__excerpt">Один из самых важных навыков, которые может дать работа с психотерапевтом — умение в разных ситуациях по-разному обходиться…</p>
+        </div>
+        <div class="blog-date">
+        <time class="blog-date__value" datetime="2021-08-11">11.08.2021</time>
+      </div>
+      </article>
+      
+    </div>
 
 
-
-
-
-  <div class="grid-container">
-    
-<article>
-  <img src="img/png/1.png" alt="Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики">
-  <h2>Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
-  <span>Автор: Лиза Файнтух</span>
-  <p>Изначально термин «эмоциональное профессиональной сфере и относился...</p>
-  <span>11.08.2021</span>
-</article>
-<article >
-  <img src="img/png/2.png" alt="Как не утонуть в тревоге и управлять своими страхами">
-  <h2>Как не утонуть в тревоге и управлять своими страхами</h2>
-  <span>Автор: Екатерина Бельтюкова</span>
-  <p>Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
-  <span>11.08.2021</span>
-</article>
-
-
-</div>
-</main>
-
+    <button class="more-button">Ещё</button>
+  </main>
 </body>
 </html>
 
