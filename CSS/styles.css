@@ -19,6 +19,10 @@ body {
   font-display: swap;
 }
 
+
+
+
+
 /* Header */
 .header {
   background-color: #ffffff;
@@ -47,7 +51,10 @@ body {
   width: 51px;
 }
 
-/* Бургер-кнопка */
+
+
+
+/* Бургер‑кнопка (для мобильных) */
 .burger-btn {
   display: none;
   position: fixed;
@@ -73,6 +80,8 @@ body {
   height: 20px;
   display: block;
 }
+
+
 
 /* Навигационное меню */
 .nav-menu {
@@ -103,7 +112,14 @@ body {
   color: #007bff;
 }
 
-/* Кнопка «Подобрать психолога» */
+
+
+
+
+
+
+/* Кнопка «Подобрать психолога */
+
 .btn-pick {
   display: inline-block;
   padding: 8px 16px;
@@ -120,7 +136,9 @@ body {
   color: #E3F5F5 !important;
 }
 
-/* Скрытый чекбокс */
+
+
+/* Скрытый чекбокс для меню */
 .menu-toggle {
   position: absolute;
   opacity: 0;
@@ -129,6 +147,8 @@ body {
   pointer-events: none;
   z-index: -1;
 }
+
+
 
 /* Хлебные крошки */
 .breadcrumbs {
@@ -159,7 +179,9 @@ body {
   color: #666;
 }
 
-/* Заголовок */
+
+
+/* Заголовок страницы */
 .main-title {
   font-weight: 700;
   font-size: 48px;
@@ -167,12 +189,14 @@ body {
   margin: 0 0 24px 126px;
 }
 
+
+
 /* Контейнер с горизонтальной прокруткой */
 .scroll-container {
   display: flex;
   gap: 8px;
   overflow-x: auto;
-  padding: 8px 126px; /* Отступ слева/справа для выравнивания с заголовком */
+  padding: 8px 126px;
   scrollbar-width: thin;
 }
 
@@ -184,6 +208,7 @@ body {
   background-color: #ccc;
   border-radius: 3px;
 }
+
 
 /* Теги */
 .tag {
@@ -211,7 +236,9 @@ body {
   background-color: #fafafa;
 }
 
-/* Карточки блога */
+
+
+ /* Карточки блога */
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -230,6 +257,9 @@ body {
   transform: translateY(-3px);
 }
 
+ /* остальные стили карточек (изображение, теги, контент, дата)  */
+
+/* Карточки блога (продолжение) */
 .blog-card__image {
   position: relative;
   overflow: hidden;
@@ -280,10 +310,9 @@ body {
   color: #333;
 }
 
-/* Дата */
 .blog-date {
   text-align: left;
-  margin-top: -10px; /* Смещение вверх для визуального выравнивания */
+  margin-top: -10px;
   padding-left: 126px;
 }
 
@@ -292,7 +321,9 @@ body {
   color: #666;
 }
 
-/* Кнопка «Ещё» */
+
+
+/* Кнопка «Ещё */
 .more-button {
   display: block;
   width: 200px;
@@ -315,7 +346,9 @@ body {
   background-color: #3ABE95;
 }
 
-/* Адаптивные стили */
+
+
+/* Для экранов до 1199px */
 @media (max-width: 1199px) {
   .header-container,
   .breadcrumbs,
@@ -328,6 +361,9 @@ body {
   }
 }
 
+
+
+/* Для экранов до 1199px */
 @media (max-width: 991px) {
   .blog-grid {
     grid-template-columns: 1fr;
@@ -343,6 +379,9 @@ body {
   }
 }
 
+
+
+/* Для экранов до 767px (мобильные) */
 @media (max-width: 767px) {
   .header-container {
     padding: 16px 16px;
@@ -356,7 +395,8 @@ body {
     display: block;
   }
 
-    .nav-menu {
+  /* Стили для открытого мобильного меню */
+  .nav-menu {
     position: fixed;
     top: 0;
     right: 0;
@@ -386,10 +426,6 @@ body {
     padding: 0;
   }
 
-  .nav-menu li {
-    width: 100%;
-  }
-
   .nav-menu a {
     font-size: 15px;
     padding: 10px 0;
@@ -401,20 +437,11 @@ body {
     background-color: #f8f9fa;
     border-radius: 4px;
   }
-
-  .menu-toggle:checked ~ .header-container::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 999;
-    animation: fadeIn 0.3s forwards;
-  }
 }
 
+
+
+/*  Для экранов 768–1023px */
 @media (min-width: 768px) and (max-width: 1023px) {
   .header-container {
     padding: 18px 32px;
@@ -438,6 +465,8 @@ body {
   }
 }
 
+
+/* Для экранов от 1024px */
 @media (min-width: 1024px) {
   .header-container {
     padding: 20px 60px;
@@ -466,7 +495,14 @@ body {
   }
 }
 
-@media (min-width: 1440px) {
+
+
+
+
+
+
+/* Для широких экранов (1440px) */
+  @media (min-width: 1440px) {
   .header-container {
     max-width: 1400px;
   }
@@ -481,45 +517,27 @@ body {
   }
 }
 
-/* Анимация оверлея */
+
+
+ /* Анимация оверлея (при открытии мобильного меню) */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-/* Дополнительные улучшения для мобильных */
-@media (max-width: 480px) {
-  .main-title {
-    font-size: 36px;
-    margin-left: 20px;
-  }
 
-  .scroll-container {
-    padding: 8px 20px;
-  }
 
-  .tag {
-    font-size: 13px;
-    padding: 6px 10px;
-  }
-
-  .blog-grid {
-    grid-template-columns: 1fr;
-    padding: 0 20px 40px;
-  }
-
-  .blog-card__image img {
-    height: 160px;
-  }
-
-  .more-button {
-    width: 180px;
-    height: 50px;
-    font-size: 16px;
-  }
+/* Эффект при наведении на тег */
+.blog-tag:hover {
+  background-color: #D1F0F0;
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
 }
 
-/* Улучшение доступности */
+
+
+/* Улучшения для доступности и печати
+ Фокус для интерактивных элементов */
 .burger-btn:focus {
   outline: 2px solid #007bff;
   outline-offset: 2px;
@@ -530,7 +548,10 @@ body {
   border-radius: 4px;
 }
 
-/* Финальные штрихи для печати */
+
+
+
+/* Стили для печати */
 @media print {
   body {
     background-color: white;
@@ -553,6 +574,11 @@ body {
     break-inside: avoid;
   }
 }
+
+
+
+
+/* Дополнительные стили для карточек блога (финальные правки) */
 .blog-card__tags {
   display: flex;
   flex-wrap: wrap;
@@ -566,28 +592,26 @@ body {
   gap: 6px;
   padding: 6px 12px;
   border-radius: 20px;
-  background-color: #E3F5F5; /* Мягкий бирюзовый фон */
   font-family: 'Montserrat', sans-serif;
   font-size: 0.85em;
-  color: #333333; /* Тёмный бирюзовый текст */
+  color: #333333;
   font-weight: 500;
   white-space: nowrap;
 }
 
 .blog-tag__icon {
-  width: 14px!important;
-  height: 14px!important;
+  width: 14px !important;
+  height: 14px !important;
   object-fit: contain;
   filter: brightness(0.9); /* Чуть затемняем иконку для гармонии */
 }
+
 
 .blog-tag__text {
   line-height: 1;
 }
 
-/* Эффект при наведении на тег */
-.blog-tag:hover {
-  background-color: #D1F0F0;
-  transform: translateY(-1px);
-  transition: all 0.2s ease;
-}
+
+
+
+/* футер */
